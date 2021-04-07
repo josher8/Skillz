@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.1)
+  - CellDataCoupler (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - CellDataCoupler
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CellDataCoupler
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  CellDataCoupler: b20c89d1c4286fe268686a4d6e176c8665bc0c27
+
+PODFILE CHECKSUM: e1cd992366a893f8022f287c6576b4e7cbdaac9a
+
+COCOAPODS: 1.8.4
