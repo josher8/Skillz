@@ -11,7 +11,7 @@ protocol RestProvider {
     func request(url: String, method: RestMethod, parameters: [String: Any], headers: [String: String], completion: @escaping RestCompletion)
 }
 
-class RestGateway: RestProvider {
+class Rest: RestProvider {
     
     init() {}
     
@@ -24,4 +24,5 @@ class RestGateway: RestProvider {
                     completion(response.data, response.error)
                    }
     }
+    
 }
