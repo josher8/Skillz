@@ -17,6 +17,7 @@
 		883A7C93261D3DFB009EDF08 /* SkillzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C92261D3DFB009EDF08 /* SkillzTests.swift */; };
 		883A7C9E261D3DFB009EDF08 /* SkillzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C9D261D3DFB009EDF08 /* SkillzUITests.swift */; };
 		883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CD0261D4271009EDF08 /* HomePresenter.swift */; };
+		883A7CD6261D4433009EDF08 /* RestGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CD5261D4433009EDF08 /* RestGateway.swift */; };
 		CF883CFB0EC7D38D120EF353 /* Pods_Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		883A7C9D261D3DFB009EDF08 /* SkillzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillzUITests.swift; sourceTree = "<group>"; };
 		883A7C9F261D3DFB009EDF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883A7CD0261D4271009EDF08 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		883A7CD5261D4433009EDF08 /* RestGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestGateway.swift; sourceTree = "<group>"; };
 		A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA89D6C0DAB229A3E89FE3B0 /* Pods_SkillzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 		883A7CCF261D421B009EDF08 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CD5261D4433009EDF08 /* RestGateway.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883A7CD6261D4433009EDF08 /* RestGateway.swift in Sources */,
 				883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */,
 				883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */,
 				883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */,
