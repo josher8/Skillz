@@ -1,20 +1,30 @@
 PODS:
   - Alamofire (5.2.1)
   - CellDataCoupler (3.1.1)
+  - ObjectMapper (4.2.0)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - CellDataCoupler
+  - ObjectMapper
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CellDataCoupler
+    - ObjectMapper
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   CellDataCoupler: b20c89d1c4286fe268686a4d6e176c8665bc0c27
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: e1cd992366a893f8022f287c6576b4e7cbdaac9a
+PODFILE CHECKSUM: 73cb3b2b4ccbed7e722e824f00c008be8b11137c
 
 COCOAPODS: 1.8.4

@@ -3,20 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5457B5B1A64180E7AA2BF85E /* Pods_SkillzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA89D6C0DAB229A3E89FE3B0 /* Pods_SkillzTests.framework */; };
 		6774B988FE99F2689763F72C /* Pods_Skillz_SkillzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7687971751BA7F41E4A15D8A /* Pods_Skillz_SkillzUITests.framework */; };
 		883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */; };
-		883A7C7E261D3DF9009EDF08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7D261D3DF9009EDF08 /* SceneDelegate.swift */; };
-		883A7C80261D3DF9009EDF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7F261D3DF9009EDF08 /* ViewController.swift */; };
-		883A7C83261D3DF9009EDF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C81261D3DF9009EDF08 /* Main.storyboard */; };
+		883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */; };
+		883A7C83261D3DF9009EDF08 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C81261D3DF9009EDF08 /* Home.storyboard */; };
 		883A7C85261D3DFB009EDF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C84261D3DFB009EDF08 /* Assets.xcassets */; };
 		883A7C88261D3DFB009EDF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C86261D3DFB009EDF08 /* LaunchScreen.storyboard */; };
 		883A7C93261D3DFB009EDF08 /* SkillzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C92261D3DFB009EDF08 /* SkillzTests.swift */; };
 		883A7C9E261D3DFB009EDF08 /* SkillzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C9D261D3DFB009EDF08 /* SkillzUITests.swift */; };
+		883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CD0261D4271009EDF08 /* HomePresenter.swift */; };
 		CF883CFB0EC7D38D120EF353 /* Pods_Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,9 +47,8 @@
 		7EF8273F1853318550922E53 /* Pods-SkillzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillzTests.release.xcconfig"; path = "Target Support Files/Pods-SkillzTests/Pods-SkillzTests.release.xcconfig"; sourceTree = "<group>"; };
 		883A7C78261D3DF9009EDF08 /* Skillz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skillz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		883A7C7D261D3DF9009EDF08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		883A7C7F261D3DF9009EDF08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		883A7C82261D3DF9009EDF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		883A7C82261D3DF9009EDF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		883A7C84261D3DFB009EDF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883A7C87261D3DFB009EDF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883A7C89261D3DFB009EDF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		883A7C99261D3DFB009EDF08 /* SkillzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkillzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A7C9D261D3DFB009EDF08 /* SkillzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillzUITests.swift; sourceTree = "<group>"; };
 		883A7C9F261D3DFB009EDF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883A7CD0261D4271009EDF08 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA89D6C0DAB229A3E89FE3B0 /* Pods_SkillzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,10 +116,9 @@
 		883A7C7A261D3DF9009EDF08 /* Skillz */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CC1261D410D009EDF08 /* Core */,
+				883A7CBF261D40F0009EDF08 /* UI */,
 				883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */,
-				883A7C7D261D3DF9009EDF08 /* SceneDelegate.swift */,
-				883A7C7F261D3DF9009EDF08 /* ViewController.swift */,
-				883A7C81261D3DF9009EDF08 /* Main.storyboard */,
 				883A7C84261D3DFB009EDF08 /* Assets.xcassets */,
 				883A7C86261D3DFB009EDF08 /* LaunchScreen.storyboard */,
 				883A7C89261D3DFB009EDF08 /* Info.plist */,
@@ -145,6 +144,63 @@
 			path = SkillzUITests;
 			sourceTree = "<group>";
 		};
+		883A7CBF261D40F0009EDF08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				883A7CCC261D41FA009EDF08 /* Stories */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		883A7CC0261D40FD009EDF08 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */,
+				883A7C81261D3DF9009EDF08 /* Home.storyboard */,
+				883A7CD0261D4271009EDF08 /* HomePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		883A7CC1261D410D009EDF08 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				883A7CCF261D421B009EDF08 /* Gateway */,
+				883A7CCE261D4216009EDF08 /* Domain */,
+				883A7CCD261D420D009EDF08 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		883A7CCC261D41FA009EDF08 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				883A7CC0261D40FD009EDF08 /* Home */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		883A7CCD261D420D009EDF08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		883A7CCE261D4216009EDF08 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		883A7CCF261D421B009EDF08 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
 		EF1DD0254A46F3092CBCA478 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +211,6 @@
 				53AC218E307C1D888C294EDC /* Pods-SkillzTests.debug.xcconfig */,
 				7EF8273F1853318550922E53 /* Pods-SkillzTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,7 +334,7 @@
 			files = (
 				883A7C88261D3DFB009EDF08 /* LaunchScreen.storyboard in Resources */,
 				883A7C85261D3DFB009EDF08 /* Assets.xcassets in Resources */,
-				883A7C83261D3DF9009EDF08 /* Main.storyboard in Resources */,
+				883A7C83261D3DF9009EDF08 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +462,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883A7C80261D3DF9009EDF08 /* ViewController.swift in Sources */,
+				883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */,
+				883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */,
 				883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */,
-				883A7C7E261D3DF9009EDF08 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,12 +500,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		883A7C81261D3DF9009EDF08 /* Main.storyboard */ = {
+		883A7C81261D3DF9009EDF08 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				883A7C82261D3DF9009EDF08 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		883A7C86261D3DFB009EDF08 /* LaunchScreen.storyboard */ = {

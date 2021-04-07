@@ -8,6 +8,8 @@ target 'Skillz' do
   # Pods for Skillz
   pod 'Alamofire', '~> 5.2'
   pod 'CellDataCoupler'
+  pod 'ObjectMapper'
+  pod 'SDWebImage'
 
   target 'SkillzTests' do
     inherit! :search_paths
