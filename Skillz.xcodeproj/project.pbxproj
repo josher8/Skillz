@@ -18,7 +18,10 @@
 		883A7C9E261D3DFB009EDF08 /* SkillzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C9D261D3DFB009EDF08 /* SkillzUITests.swift */; };
 		883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CD0261D4271009EDF08 /* HomePresenter.swift */; };
 		883A7CD6261D4433009EDF08 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CD5261D4433009EDF08 /* Rest.swift */; };
-		883A7CDE261D4EEB009EDF08 /* SkillzGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CDD261D4EEB009EDF08 /* SkillzGateway.swift */; };
+		883A7CDE261D4EEB009EDF08 /* HearthstoneGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CDD261D4EEB009EDF08 /* HearthstoneGateway.swift */; };
+		883A7CE3261E9D4A009EDF08 /* HearthstoneDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CE2261E9D4A009EDF08 /* HearthstoneDomain.swift */; };
+		883A7CE9261EA21B009EDF08 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CE8261EA21B009EDF08 /* Card.swift */; };
+		883A7CF1261EB06A009EDF08 /* HearthstoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */; };
 		CF883CFB0EC7D38D120EF353 /* Pods_Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +65,10 @@
 		883A7C9F261D3DFB009EDF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883A7CD0261D4271009EDF08 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		883A7CD5261D4433009EDF08 /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
-		883A7CDD261D4EEB009EDF08 /* SkillzGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillzGateway.swift; sourceTree = "<group>"; };
+		883A7CDD261D4EEB009EDF08 /* HearthstoneGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneGateway.swift; sourceTree = "<group>"; };
+		883A7CE2261E9D4A009EDF08 /* HearthstoneDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneDomain.swift; sourceTree = "<group>"; };
+		883A7CE8261EA21B009EDF08 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneService.swift; sourceTree = "<group>"; };
 		A4E84EFFB6105D12363A7B4D /* Pods_Skillz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA89D6C0DAB229A3E89FE3B0 /* Pods_SkillzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -169,6 +175,7 @@
 		883A7CC1261D410D009EDF08 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CE7261E9F70009EDF08 /* Service */,
 				883A7CCF261D421B009EDF08 /* Gateway */,
 				883A7CCE261D4216009EDF08 /* Domain */,
 				883A7CCD261D420D009EDF08 /* Models */,
@@ -187,6 +194,7 @@
 		883A7CCD261D420D009EDF08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CE8261EA21B009EDF08 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 		883A7CCE261D4216009EDF08 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CE2261E9D4A009EDF08 /* HearthstoneDomain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -202,9 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				883A7CD5261D4433009EDF08 /* Rest.swift */,
-				883A7CDD261D4EEB009EDF08 /* SkillzGateway.swift */,
+				883A7CDD261D4EEB009EDF08 /* HearthstoneGateway.swift */,
 			);
 			path = Gateway;
+			sourceTree = "<group>";
+		};
+		883A7CE7261E9F70009EDF08 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		EF1DD0254A46F3092CBCA478 /* Pods */ = {
@@ -469,7 +486,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				883A7CD6261D4433009EDF08 /* Rest.swift in Sources */,
-				883A7CDE261D4EEB009EDF08 /* SkillzGateway.swift in Sources */,
+				883A7CF1261EB06A009EDF08 /* HearthstoneService.swift in Sources */,
+				883A7CDE261D4EEB009EDF08 /* HearthstoneGateway.swift in Sources */,
+				883A7CE9261EA21B009EDF08 /* Card.swift in Sources */,
+				883A7CE3261E9D4A009EDF08 /* HearthstoneDomain.swift in Sources */,
 				883A7CD1261D4271009EDF08 /* HomePresenter.swift in Sources */,
 				883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */,
 				883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */,
