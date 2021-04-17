@@ -1,12 +1,15 @@
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
-    lazy var service: HearthstoneProvider = HearthstoneService()
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    @IBAction func navToHearthstone(_ sender: UIButton) {
+        let vc = HearthstoneCardListViewController.create()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
