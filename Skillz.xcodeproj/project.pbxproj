@@ -10,6 +10,8 @@
 		5457B5B1A64180E7AA2BF85E /* Pods_SkillzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA89D6C0DAB229A3E89FE3B0 /* Pods_SkillzTests.framework */; };
 		6774B988FE99F2689763F72C /* Pods_Skillz_SkillzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7687971751BA7F41E4A15D8A /* Pods_Skillz_SkillzUITests.framework */; };
 		8812E1EC262A8A80002ABC0E /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812E1EB262A8A80002ABC0E /* CardSet.swift */; };
+		8812E1F3262A8F0D002ABC0E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812E1F2262A8F0D002ABC0E /* BaseViewController.swift */; };
+		8812E1FB262A9045002ABC0E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812E1FA262A9045002ABC0E /* BasePresenter.swift */; };
 		883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */; };
 		883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */; };
 		883A7C83261D3DF9009EDF08 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C81261D3DF9009EDF08 /* Home.storyboard */; };
@@ -53,6 +55,8 @@
 		7687971751BA7F41E4A15D8A /* Pods_Skillz_SkillzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillz_SkillzUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF8273F1853318550922E53 /* Pods-SkillzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillzTests.release.xcconfig"; path = "Target Support Files/Pods-SkillzTests/Pods-SkillzTests.release.xcconfig"; sourceTree = "<group>"; };
 		8812E1EB262A8A80002ABC0E /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		8812E1F2262A8F0D002ABC0E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8812E1FA262A9045002ABC0E /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		883A7C78261D3DF9009EDF08 /* Skillz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skillz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8812E1F0262A8EEC002ABC0E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8812E1F1262A8EF2002ABC0E /* Base Files */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8812E1F1262A8EF2002ABC0E /* Base Files */ = {
+			isa = PBXGroup;
+			children = (
+				8812E1F2262A8F0D002ABC0E /* BaseViewController.swift */,
+				8812E1FA262A9045002ABC0E /* BasePresenter.swift */,
+			);
+			path = "Base Files";
+			sourceTree = "<group>";
+		};
 		883A7C6F261D3DF9009EDF08 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +201,7 @@
 		883A7CC1261D410D009EDF08 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8812E1F0262A8EEC002ABC0E /* UI */,
 				883A7CE7261E9F70009EDF08 /* Service */,
 				883A7CCF261D421B009EDF08 /* Gateway */,
 				883A7CCE261D4216009EDF08 /* Domain */,
@@ -492,7 +514,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				883A7CD6261D4433009EDF08 /* Rest.swift in Sources */,
+				8812E1FB262A9045002ABC0E /* BasePresenter.swift in Sources */,
 				883A7CF1261EB06A009EDF08 /* HearthstoneService.swift in Sources */,
+				8812E1F3262A8F0D002ABC0E /* BaseViewController.swift in Sources */,
 				883A7CFF261EB531009EDF08 /* SceneDelegate.swift in Sources */,
 				883A7CDE261D4EEB009EDF08 /* HearthstoneGateway.swift in Sources */,
 				883A7CE9261EA21B009EDF08 /* Card.swift in Sources */,

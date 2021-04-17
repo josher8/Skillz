@@ -11,7 +11,7 @@ class HearthstoneDomain {
         let endpoint = "cards"
         gateway.request(method: .get, path: endpoint, parameters: nil) { (data, error) in
             guard let data = data else {
-                failure("There was an error getting the data.", error)
+                failure("There was an error getting all the cards.", error)
                 return
             }
            
@@ -19,7 +19,7 @@ class HearthstoneDomain {
                 let cards = try JSONDecoder().decode(CardSet.self, from: data)
                 success(cards)
             } catch let error {
-                failure("There was an error getting the data.", error)
+                failure("There was an error getting all the cards.", error)
             }
         }
     }
@@ -29,7 +29,7 @@ class HearthstoneDomain {
         let endpoint = "cards/classes/\(cardClass)"
         gateway.request(method: .get, path: endpoint, parameters: nil) { (data, error) in
             guard let data = data else {
-                failure("There was an error getting the data.", error)
+                failure("There was an error getting \(cardClass) cards.", error)
                 return
             }
             
@@ -37,7 +37,7 @@ class HearthstoneDomain {
                 let cards = try JSONDecoder().decode([Card].self, from: data)
                 success(cards)
             } catch let error {
-                failure("There was an error getting the data.", error)
+                failure("There was an error getting \(cardClass) cards.", error)
             }
         }
     }
