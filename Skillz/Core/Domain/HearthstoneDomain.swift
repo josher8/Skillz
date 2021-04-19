@@ -42,4 +42,22 @@ class HearthstoneDomain {
         }
     }
     
+    // MARK: Search Cards
+    func getCardsBySearch(cardName: String, success: @escaping ([Card]) -> Void, failure: @escaping (String, Error?) -> Void) {
+        let endpoint = "cards/\(cardName)"
+        gateway.request(method: .get, path: endpoint, parameters: nil) { (data, error) in
+            guard let data = data else {
+                failure("There was an error getting \(cardName) cards.", error)
+                return
+            }
+            
+            do {
+                let cards = try JSONDecoder().decode([Card].self, from: data)
+                success(cards)
+            } catch let error {
+                failure("There was an error getting \(cardName) cards.", error)
+            }
+        }
+    }
+    
 }

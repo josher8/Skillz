@@ -6,4 +6,5 @@ struct Card: Codable {
     var type: String?
     var text: String?
     var playerClass: String?
+    var img: String?
 }

@@ -1,6 +1,10 @@
+import CellDataCoupler
 import UIKit
 
 class HearthstoneCardListViewController: BaseViewController {
+    
+    @IBOutlet var tableView: UITableView!
+    var tableviewSource: CouplerTableSource?
     
     static func create() -> HearthstoneCardListViewController {
         let vc = UIStoryboard(name: "HearthstoneCardList", bundle: Bundle.main).instantiateViewController(identifier: "HearthstoneCardList") as! HearthstoneCardListViewController
@@ -10,7 +14,12 @@ class HearthstoneCardListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableViewSource()
         
+    }
+    
+    private func setupTableViewSource() {
+        tableviewSource = CouplerTableSource(with: tableView)
     }
     
 }
