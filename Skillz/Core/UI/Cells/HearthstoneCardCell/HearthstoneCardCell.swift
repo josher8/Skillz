@@ -5,6 +5,11 @@ import UIKit
 struct HearthstoneCardData {
     var name: String
     var img: String
+    
+    init(name: String, img: String) {
+        self.name = name
+        self.img = img
+    }
 }
 
 class HearthstoneCardCell: BaseTableViewCell<HearthstoneCardData> {
@@ -19,6 +24,5 @@ class HearthstoneCardCell: BaseTableViewCell<HearthstoneCardData> {
             cardImageView.sd_setImage(with: URL(string: imageUrl))
         }
     }
-    
     
 }

@@ -133,6 +133,7 @@
 		8812E1F1262A8EF2002ABC0E /* Base Files */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */,
 				8812E1F2262A8F0D002ABC0E /* BaseViewController.swift */,
 				8812E1FA262A9045002ABC0E /* BasePresenter.swift */,
 				8812E23D262D087E002ABC0E /* BaseTableViewCell.swift */,
@@ -289,7 +290,6 @@
 		883A7CE7261E9F70009EDF08 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
