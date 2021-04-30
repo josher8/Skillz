@@ -2,9 +2,11 @@ import Foundation
 
 class HearthstoneDomain {
     
-    private let gateway = HearthstoneGateway()
+    private var gateway: HearthstoneGatewayProvider
     
-    init() {}
+    init(gateway: HearthstoneGatewayProvider = HearthstoneGateway()) {
+        self.gateway = gateway
+    }
     
     // MARK: Get All Cards
     func getAllCards(success: @escaping (CardSet) -> Void, failure: @escaping (String, Error?) -> Void) {

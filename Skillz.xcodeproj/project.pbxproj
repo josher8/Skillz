@@ -18,6 +18,10 @@
 		8812E23E262D087E002ABC0E /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812E23D262D087E002ABC0E /* BaseTableViewCell.swift */; };
 		8812E244262D0A7F002ABC0E /* HearthstoneCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812E243262D0A7F002ABC0E /* HearthstoneCardCell.swift */; };
 		8812E24D262D0CE0002ABC0E /* HearthstoneCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8812E24C262D0CE0002ABC0E /* HearthstoneCardCell.xib */; };
+		88300D56263BABF100FA63DE /* HearthstoneDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88300D55263BABF100FA63DE /* HearthstoneDomainTests.swift */; };
+		88300D5F263BACC300FA63DE /* MockHearthstoneGatewayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88300D5E263BACC300FA63DE /* MockHearthstoneGatewayProvider.swift */; };
+		88300D6B263BB5F100FA63DE /* HearthstoneGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88300D6A263BB5F100FA63DE /* HearthstoneGatewayTests.swift */; };
+		88300D76263BB77900FA63DE /* MockRestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88300D75263BB77900FA63DE /* MockRestProvider.swift */; };
 		883A7C7C261D3DF9009EDF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */; };
 		883A7C80261D3DF9009EDF08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */; };
 		883A7C83261D3DF9009EDF08 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883A7C81261D3DF9009EDF08 /* Home.storyboard */; };
@@ -69,6 +73,10 @@
 		8812E23D262D087E002ABC0E /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		8812E243262D0A7F002ABC0E /* HearthstoneCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneCardCell.swift; sourceTree = "<group>"; };
 		8812E24C262D0CE0002ABC0E /* HearthstoneCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HearthstoneCardCell.xib; sourceTree = "<group>"; };
+		88300D55263BABF100FA63DE /* HearthstoneDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneDomainTests.swift; sourceTree = "<group>"; };
+		88300D5E263BACC300FA63DE /* MockHearthstoneGatewayProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHearthstoneGatewayProvider.swift; sourceTree = "<group>"; };
+		88300D6A263BB5F100FA63DE /* HearthstoneGatewayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoneGatewayTests.swift; sourceTree = "<group>"; };
+		88300D75263BB77900FA63DE /* MockRestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestProvider.swift; sourceTree = "<group>"; };
 		883A7C78261D3DF9009EDF08 /* Skillz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skillz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883A7C7B261D3DF9009EDF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883A7C7F261D3DF9009EDF08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +141,6 @@
 		8812E1F1262A8EF2002ABC0E /* Base Files */ = {
 			isa = PBXGroup;
 			children = (
-				883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */,
 				8812E1F2262A8F0D002ABC0E /* BaseViewController.swift */,
 				8812E1FA262A9045002ABC0E /* BasePresenter.swift */,
 				8812E23D262D087E002ABC0E /* BaseTableViewCell.swift */,
@@ -166,6 +173,41 @@
 				8812E24C262D0CE0002ABC0E /* HearthstoneCardCell.xib */,
 			);
 			path = HearthstoneCardCell;
+			sourceTree = "<group>";
+		};
+		88300D53263BAB9D00FA63DE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				88300D69263BB5E000FA63DE /* Gateway */,
+				88300D5D263BAC8300FA63DE /* Mocks */,
+				88300D54263BABA900FA63DE /* Domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		88300D54263BABA900FA63DE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				88300D55263BABF100FA63DE /* HearthstoneDomainTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		88300D5D263BAC8300FA63DE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				88300D5E263BACC300FA63DE /* MockHearthstoneGatewayProvider.swift */,
+				88300D75263BB77900FA63DE /* MockRestProvider.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		88300D69263BB5E000FA63DE /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				88300D6A263BB5F100FA63DE /* HearthstoneGatewayTests.swift */,
+			);
+			path = Gateway;
 			sourceTree = "<group>";
 		};
 		883A7C6F261D3DF9009EDF08 = {
@@ -207,6 +249,7 @@
 		883A7C91261D3DFB009EDF08 /* SkillzTests */ = {
 			isa = PBXGroup;
 			children = (
+				88300D53263BAB9D00FA63DE /* Core */,
 				883A7C92261D3DFB009EDF08 /* SkillzTests.swift */,
 				883A7C94261D3DFB009EDF08 /* Info.plist */,
 			);
@@ -290,6 +333,7 @@
 		883A7CE7261E9F70009EDF08 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				883A7CF0261EB06A009EDF08 /* HearthstoneService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -581,6 +625,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				883A7C93261D3DFB009EDF08 /* SkillzTests.swift in Sources */,
+				88300D76263BB77900FA63DE /* MockRestProvider.swift in Sources */,
+				88300D56263BABF100FA63DE /* HearthstoneDomainTests.swift in Sources */,
+				88300D6B263BB5F100FA63DE /* HearthstoneGatewayTests.swift in Sources */,
+				88300D5F263BACC300FA63DE /* MockHearthstoneGatewayProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
